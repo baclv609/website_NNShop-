@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Page</title>
+    <link rel="stylesheet" href="./assets/scss/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+  </head>
+
+  <body class="bg-[#F2EDE6]">
+    <section
+      class="navbar flex flex-wrap justify-between mx-auto w-11/12 md:w-3/4 px-5 py-5"
+    >
+      <div class="box-start flex flex-wrap justify-between gap-4">
+        <div class="logo">
+          <a href="index.html"
+            ><img src="./assets/imgs/Logo.png" class="" alt="my-logo"
+          /></a>
+        </div>
+        <nav class="menu">
+          <ul class="flex flex-wrap justify-between gap-4 mx-2 my-1">
+            <a href="products.html"
+              ><li class="hover:text-[#018294] cursor-pointer">Product</li></a
+            >
+            <a href="#"
+              ><li class="hover:text-[#018294] cursor-pointer">Pricing</li></a
+            >
+            <a href="contacts.html"
+              ><li class="hover:text-[#018294] cursor-pointer">
+                Contact us
+              </li></a
+            >
+            <a href="blogs.html"
+              ><li class="hover:text-[#018294] cursor-pointer">Blog</li></a
+            >
+            <a href="#"
+              ><li class="hover:text-[#018294] cursor-pointer">About us</li></a
+            >
+          </ul>
+        </nav>
+      </div>
+      <div class="box-end flex flex-wrap justify-between gap-4 items-center">
+        <a href="#"><button class="font-medium">Login</button></a>
+        <a href="#"
+          ><button
+            class="font-normal text-white bg-[#2D2D2D] px-4 py-2 rounded-[40px]"
+          >
+            Book a Demo
+          </button></a
+        >
+      </div>
+    </section>
+    <div class="dropdown-menu hidden lg:hidden" id="dropdown-menu">
+      <a href="#"
+        ><button class="font-medium block w-full text-left px-5 py-2">
+          Login
+        </button></a
+      >
+      <a href="#"
+        ><button
+          class="font-normal text-white bg-[#2D2D2D] w-full text-left px-5 py-2 rounded-[40px] mt-2"
+        >
+          Book a Demo
+        </button></a
+      >
+    </div>
+    <section class="products mx-auto w-11/12 md:w-3/4 px-5 py-5 mt-9">
+      <div class="title-block text-4xl font-semibold">Find Your Products</div>
+      <div
+        class="filter-block flex flex-wrap justify-between items-center mt-6"
+      >
+        <div class="all-filter bg-white px-4 py-1">
+          <i class="fa-solid fa-arrow-up-wide-short"></i>
+          <span>All Filter</span>
+        </div>
+        <div class="sort-by flex gap-4 items-center">
+          <span class="text-gray-500">Sort By:</span>
+          <select name="" id="">
+            <option value="1">Relevancy</option>
+            <option value="1">Price</option>
+            <option value="1">Rating</option>
+          </select>
+        </div>
+      </div>
+      <div class="product-list flex flex-wrap justify-between mt-7 -mx-2">
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Mid Century Modern T-Shirt
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images2.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Modern T-Shirt
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images3.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Corporate Office Shoes
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images4.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Black Hoodie
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images5.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Green Shoes
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images6.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Corporate Office Shoes
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images7.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Red Hoodie
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images8.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Black T-shirt
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images9.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Modern Shoes
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images10.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Black Shirt
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images11.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Mid Century Modern T-Shirt
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+        <div class="product-card w-full md:w-1/3 px-2 mb-4">
+          <div class="image-card relative group">
+            <img
+              class="w-full h-full object-cover"
+              src="./assets/imgs/Images12.png"
+              alt=""
+            />
+            <div
+              class="add-to-card bg-[#018294] text-center px-2 py-3 text-white hidden absolute bottom-0 left-0 right-0 group-hover:block transition-opacity duration-300 ease-in-out opacity-0 group-hover:opacity-100"
+            >
+              Add to Card
+            </div>
+          </div>
+          <div class="card-info">
+            <div class="flex justify-between my-3">
+              <div class="product-category font-normal text-gray-400 text-sm">
+                Men-Cloths
+              </div>
+              <div class="heart-icon"><i class="fa-regular fa-heart"></i></div>
+            </div>
+            <div class="product-title text-xl font-semibold mb-3">
+              Corporate Office Shoes
+            </div>
+            <div class="flex justify-between items-center">
+              <div class="rate flex justify-between items-center gap-1">
+                <i class="fa-solid fa-star text-yellow-500"></i>
+                <span class="rate-num text-gray-600">5.0 (18)</span>
+              </div>
+              <div class="price-product font-medium">$110</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="w-full flex justify-center my-4">
+        <button class="btn-more bg-[#018294] text-white px-5 py-2">
+          Load More
+        </button>
+      </div>
+    </section>
+    <section
+      class="footer-product-page mx-auto w-11/12 md:w-3/4 mt-20 mb-20 text-center"
+    >
+      <p class="title-footer text-4xl font-semibold">
+        All eCommerce CMS platforms supported
+      </p>
+      <p class="text-sm text-gray-400 mt-3">
+        Magento 2, Shopify, WooCommerce, BigCommerce, Opencart and more.
+      </p>
+      <div
+        class="brand flex flex-col md:flex-row md:justify-between items-center mt-10"
+      >
+        <img
+          src="./assets/imgs/Brand1.png"
+          alt=""
+          class="py-3 md:py-0 w-[170px]"
+        />
+        <img
+          src="./assets/imgs/Brand2.png"
+          alt=""
+          class="py-3 md:py-0 w-[170px]"
+        />
+        <img
+          src="./assets/imgs/Brand3.png"
+          alt=""
+          class="py-3 md:py-0 w-[170px]"
+        />
+        <img
+          src="./assets/imgs/Brand4.png"
+          alt=""
+          class="py-3 md:py-0 w-[170px]"
+        />
+        <img
+          src="./assets/imgs/Brand5.png"
+          alt=""
+          class="py-3 md:py-0 w-[170px]"
+        />
+      </div>
+      <div class="banner-footer flex justify-center mt-20">
+        <img src="./assets/imgs/BannerFooter.png" alt="" />
+      </div>
+      <div class="nav-footer flex flex-wrap justify-between mt-10">
+        <div class="logo">
+          <img src="./assets/imgs/Logo.png" alt="" />
+        </div>
+        <div class="menu-footer">
+          <ul
+            class="flex flex-wrap justify-between gap-4 mx-2 my-1 text-gray-400"
+          >
+            <li>Pricing</li>
+            <li>Company</li>
+            <li>About us</li>
+            <li>Contact us</li>
+          </ul>
+        </div>
+        <div class="social-icon sm:mt-4 md:mt-4">
+          <img src="./assets/imgs/Social Icon.png" alt="" />
+        </div>
+      </div>
+    </section>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </body>
+</html>

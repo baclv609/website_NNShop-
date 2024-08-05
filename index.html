@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>NN Shop</title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<link rel="stylesheet" href="./assets/scss/style.css" />
+</head>
+
+<body>
+	<section class="navbar flex flex-wrap justify-between mx-auto w-11/12 md:w-3/4 px-5 py-5">
+		<div class="box-start flex flex-wrap justify-between gap-4">
+			<div class="logo">
+				<a href="index.html"><img src="./assets/imgs/Logo.png" class="" alt="my-logo" /></a>
+
+			</div>
+			<nav class="menu">
+				<ul class="flex flex-wrap justify-between gap-4 mx-2 my-1">
+					<a href="products.html">
+						<li class="hover:text-[#018294] cursor-pointer">Product</li>
+					</a>
+					<a href="#">
+						<li class="hover:text-[#018294] cursor-pointer">Pricing</li>
+					</a>
+					<a href="contacts.html">
+						<li class="hover:text-[#018294] cursor-pointer">Contact us</li>
+					</a>
+					<a href="blogs.html">
+						<li class="hover:text-[#018294] cursor-pointer">Blog</li>
+					</a>
+					<a href="#">
+						<li class="hover:text-[#018294] cursor-pointer">About us</li>
+					</a>
+				</ul>
+			</nav>
+		</div>
+		<div class="box-end flex flex-wrap justify-between gap-4 items-center">
+			<a href="#"><button class="font-medium">Login</button></a>
+			<a href="#"><button class="font-normal text-white bg-[#2D2D2D] px-4 py-2 rounded-[40px]">
+					Book a Demo
+				</button></a>
+		</div>
+	</section>
+	<div class="dropdown-menu hidden lg:hidden" id="dropdown-menu">
+		<a href="#"><button class="font-medium block w-full text-left px-5 py-2">
+				Login
+			</button></a>
+		<a href="#"><button class="font-normal text-white bg-[#2D2D2D] w-full text-left px-5 py-2 rounded-[40px] mt-2">
+				Book a Demo
+			</button></a>
+	</div>
+	<main class="bg-[#005461]">
+		<div class="container max-w-screen-xl mx-auto px-4">
+			<section id="sales">
+				<h2 class="title"> Merchandising to increase sales.</h2>
+				<div class="content">
+					<div class="flex flex-wrap gx-6">
+						<div class="w-full sm:w-full md:w-1/3 lg:w-1/3 px-4">
+							<img src="./assets/imgs/Icon.png" alt="" />
+							<div class="flex justify-center">
+								<h3
+									class="text-white text-center  mb-[18px] text-[28px] font-medium leading-[34px] w-[286px]">
+									Conversion rate skyrockets.</h3>
+							</div>
+							<p>Convert more online sales with our visual merchandising interface.
+							</p>
+						</div>
+						<div class="w-full sm:w-full md:w-1/3 lg:w-1/3 px-4">
+							<img src="./assets/imgs/Icon1.png" alt="" />
+							<div class="flex justify-center">
+								<h3
+									class="text-white text-center font-medium mb-[18px] text-[28px] leading-[34px] w-[286px]">
+									Increase average order value</h3>
+							</div>
+							<p>Increase average order value of your online store by 17% with this little trick.
+							</p>
+						</div>
+						<div class="w-full sm:w-full md:w-1/3 lg:w-1/3 px-4">
+							<img src="./assets/imgs/Icon3.png" alt="" />
+							<div class="flex justify-center">
+								<h3
+									class="text-white text-center font-medium mb-[18px] text-[28px] leading-[34px] w-[286px]">
+									Spend less time for management</h3>
+							</div>
+							<p>Let your employees spend less time managing the online selling it.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="how">
+				<div class="flex flex-col justify-center items-center md:gap-5 gap-3">
+					<h2 class="md:text-[50px] text-[36px] font-medium !mb-0">How Smaller works</h2>
+					<h3 class="md:text-[28px] text-[12px] font-normal text-center">Lorem ipsum dolor sit, amet
+						consectetur adipisicing
+						elit.
+						Eum, consectetur?</h3>
+				</div>
+				<!-- content -->
+				<div>
+					<!--1  -->
+					<div class="flex md:flex-row-reverse justify-between flex-col mt-[90px]">
+						<div class="w-full md:w-[470px]">
+							<span class="text-white w-[470px] text-[30px] md:text-[38px] font-medium">Set basic sorting
+								rules for any categories</span>
+							<div class="text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">Bulk sort products
+								on any category page you need, combine different sort rules:
+							</div>
+							<hr class="w-full md:mt-[30px] mt-[20px]">
+							<ul class="text-gray-300 list-disc pl-3 md:mt-[20px] mt-[15px] mb-[30px] md:*:mb-4 *:mb-2">
+								<li>Newest</li>
+								<li>Bestseller</li>
+								<li>Most reviewable</li>
+								<li>Price</li>
+								<li>Custom Attribute</li>
+							</ul>
+						</div>
+						<div class="w-full md:w-1/2">
+							<img src="./assets/imgs/Card.png" alt="" />
+						</div>
+					</div>
+					<!-- 2 -->
+					<div class="flex md:flex-row flex-col justify-between  mt-[90px]">
+						<div class="w-full md:w-[470px]">
+							<span class="text-white w-[470px] text-[30px] md:text-[38px] font-medium">Drag and Drop
+								catalog management</span>
+							<div
+								class="text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px] md:leading-7 leading-3 ">
+								Use the Drag and Drop function to sort your products in the most intuitive, quickest
+								way.
+							</div>
+							<div
+								class="text-xs md:text-[16px] text-gray-300 md:mt-[30px] mt-[15px] md:leading-7 leading-3 mb-4">
+								Set scores for products by adding number, SKUs with higher scores will be displayed on
+								top of the category pages.
+							</div>
+						</div>
+						<div class="w-full md:w-1/2">
+							<img src="./assets/imgs/Card.png" alt="" />
+						</div>
+					</div>
+
+					<!-- 3 -->
+					<div class="flex md:flex-row-reverse justify-between flex-col mt-[90px]">
+						<div class="w-full md:w-[470px]">
+							<span class="text-white w-[470px] text-[30px] md:text-[38px] font-medium">Limit and add
+								product groups per category pages</span>
+							<div class="text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">Achieve a certain
+								variety on your catalog pages:
+							</div>
+							<hr class="w-full md:mt-[30px] mt-[20px]">
+							<ul class="text-gray-300 list-disc pl-3 md:mt-[20px] mt-[15px] mb-[30px] md:*:mb-4 *:mb-2">
+								<li>Ensure the page does not contain identical products: same color, style or type.</li>
+								<li>Hide and add the desired products or product groups on the category page.</li>
+							</ul>
+						</div>
+						<div class="w-full md:w-1/2">
+							<img src="./assets/imgs/Card.png" alt="" />
+						</div>
+					</div>
+					<!--4  -->
+					<div class="flex md:flex-row flex-col justify-between  mt-[90px]">
+						<div class="w-full md:w-[470px]">
+							<span class="text-white w-[470px] text-[30px] md:text-[38px] font-medium">Control
+								poor-selling products</span>
+							<div
+								class="text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px] md:leading-7 leading-3 ">
+								Sortler provides flexible features for the management of your low-selling items.
+							</div>
+							<hr class="w-full md:mt-[30px] mt-[20px]">
+							<ul class="text-gray-300 list-disc pl-3 md:mt-[20px] mt-[15px] mb-[30px] md:*:mb-4 *:mb-2">
+								<li>Tracking low-selling items</li>
+								<li>Raising the item position to the top.</li>
+								<li>Applying discounts</li>
+							</ul>
+						</div>
+						<div class="w-full md:w-1/2">
+							<img src="./assets/imgs/Card.png" alt="" />
+						</div>
+					</div>
+
+					<!-- 5 -->
+					<div class="flex md:flex-row-reverse justify-between flex-col mt-[90px]">
+						<div class="w-full md:w-[470px]">
+							<span class="text-white w-[470px] text-[30px] md:text-[38px] font-medium">Create rules of
+								low-stock and out-of-stock products</span>
+							<div class="text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">Place low-stock
+								items at the top of your product list. Move out-of-stock products down the catalog.
+							</div>
+							<hr class="w-full md:mt-[30px] mt-[20px]">
+							<div class="text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px] font-normal"><span
+									class="font-medium text-white">Place low-stock</span>
+								items at the top of your product list. Move out-of-stock products down the catalog.
+							</div>
+							<div class="text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px] font-normal"><span
+									class="font-medium text-white">Create rules </span>for applying discounts in your
+								catalog. Simplify loyalty program management, thereby increasing sales.
+							</div>
+						</div>
+						<div class="w-full md:w-1/2 mt-5 md:mt-0">
+							<img src="./assets/imgs/Card.png" alt="" />
+						</div>
+					</div>
+				</div>
+		</div>
+		<!-- end -->
+		<section id="benefits" class=" container max-w-screen-xl mx-auto px-4">
+			<div>
+				<div class="text-center md:text-[50px] text-[30px] font-semibold leading-[54px] text-white">Benefits
+				</div>
+			</div>
+			<div class="grid grid-cols-12 gap-[30px] md:gap-[70px] mt-[100px]">
+				<div class="col-span-12 md:col-span-4 md:w-[300px]">
+					<img src="./assets/imgs/Benefits1.png" alt="imgage" class="w-[70px] h-[70px]">
+					<div class="mt-[30px] text-[FFF] text-xl font-medium">Compatibility</div>
+					<div class="w-[300px]  leading-[26px] text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">
+						Sortler supports all popular eCommerce solutions, including Magento, Shopify, WooCommerce,
+						BigCommerce.
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-4 md:w-[300px]">
+					<img src="./assets/imgs/Benefits2.png" alt="imgage" class="w-[70px] h-[70px]">
+					<div class="mt-[30px] text-[FFF] text-xl font-medium">Simplified merchandising</div>
+					<div class="w-[300px]  leading-[26px] text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">
+						Your employees, work faster and the less time they spend on online visual merchandising tasks.
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-4 md:w-[300px]">
+					<img src="./assets/imgs/Benefits3.png" alt="imgage" class="w-[70px] h-[70px]">
+					<div class="mt-[30px] text-[FFF] text-xl font-medium">No Coding Required</div>
+					<div class="w-[300px]  leading-[26px] text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">
+						Everything is designed in such a way as to put the smart sorting system into operation without
+						delay.
+					</div>
+				</div>
+			</div>
+			<div class="grid grid-cols-12 gap-[30px] md:gap-[70px] mt-[30px]">
+				<div class="col-span-12 md:col-span-4 md:w-[300px]">
+					<img src="./assets/imgs/Benefits4.png" alt="imgage" class="w-[70px] h-[70px]">
+					<div class="mt-[30px] text-[FFF] text-xl font-medium">Built-in emulator</div>
+					<div class="w-[300px]  leading-[26px] text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">
+						Sortler provides you with a special emulator that shows all changes before they are applied to
+						your live website.
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-4 md:w-[300px]">
+					<img src="./assets/imgs/Benefits5.png" alt="imgage" class="w-[70px] h-[70px]">
+					<div class="mt-[30px] text-[FFF] text-xl font-medium">Backup feature</div>
+					<div class="w-[300px]  leading-[26px] text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">
+						Our visual product sorting tool has a backup feature to undo the changes made. So you actually
+						risk nothing.
+					</div>
+				</div>
+				<div class="col-span-12 md:col-span-4 md:w-[300px]">
+					<img src="./assets/imgs/Benefits6.png" alt="imgage" class="w-[70px] h-[70px]">
+					<div class="mt-[30px] text-[FFF] text-xl font-medium">Round-the-clock supports</div>
+					<div class="w-[300px]  leading-[26px] text-xs md:text-[16px] text-gray-300 md:mt-[20px] mt-[10px]">
+						Being in touch 24/7, we're ready to answer your questions in real-time, whenever you need.
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="pricing" class=" container max-w-screen-xl mx-auto px-4 ">
+			<div class="flex flex-col justify-center items-center md:gap-5 gap-3">
+				<h2 class="md:text-[50px] text-[36px] font-medium !mb-0">Simple pricing</h2>
+				<h3 class="md:text-[28px] text-[12px] font-normal text-center">No credit card required. Cancel any time.
+				</h3>
+			</div>
+
+			<div class="bg-white rounded-[20px]">
+				<div class=" mt-[170px] grid grid-cols-12 gap-[30px]">
+					<!-- item 1 -->
+					<div class=" md:col-span-4 col-span-12 bg-white p-[30px] rounded-[20px]">
+						<div class="flex items-center gap-5">
+							<img src="./assets/imgs/pricing1.png" alt="" class="w-[64px] h-[64px]">
+							<span class="font-medium text-[38px] leading-[44px] text-[#2D2D2D]">Free</span>
+						</div>
+						<p class="mt-5 text-[#676562] text-[16px] leading-7 font-normal">Starter plan to manage your one
+							category and try everything Sortler has to offer</p>
+						<div class="mt-[30px] text-[16px] font-normal leading-7 text-[#676562] text-center">
+							<span class="text-[34px] text-[#2D2D2D]">$0</span>
+							/ free forever
+						</div>
+						<div><button
+								class="mt-[20px] text-[#2D2D2D] py-[20px] w-full bg-[#F7D047] font-medium text-xl text-center rounded-[40px]">Book
+								a Demo</button></div>
+						<hr class="my-[30px]">
+						<div>
+							<ul>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#676562] text-[16px] font-normal leading-5">Up to 1K products
+										included</p>
+								</li>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#676562] text-[16px] font-normal leading-5">1 category included</p>
+								</li>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#676562] text-[16px] font-normal leading-5">1 staff account included
+									</p>
+								</li>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#676562] text-[16px] font-normal leading-5">Indexation: ones a day
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- item 2 -->
+					<div class=" md:col-span-4 col-span-12 bg-[#028193] p-[30px] rounded-[20px]">
+						<div class="flex items-center gap-5">
+							<img src="./assets/imgs/pricing2.png" alt="" class="w-[64px] h-[64px]">
+							<span class="font-medium text-[38px] leading-[44px] text-[#FFF]">Free</span>
+						</div>
+						<p class="mt-5 text-[#FFF] text-[16px] leading-7 font-normal">Starter plan to manage your one
+							category and try everything Sortler has to offer</p>
+						<div class="mt-[30px] text-[16px] font-normal leading-7 text-[#FFF] text-center">
+							<span class="text-[34px] text-[#FFF]">$0</span>
+							/ free forever
+						</div>
+						<div><button
+								class="mt-[20px] text-[#2D2D2D] py-[20px] w-full bg-[#F7D047] font-medium text-xl text-center rounded-[40px]">Book
+								a Demo</button></div>
+						<hr class="my-[30px]">
+						<div>
+							<ul>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#FFF] text-[16px] font-normal leading-5">Up to 100k products
+										included</p>
+								</li>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#FFF] text-[16px] font-normal leading-5">Up to 50 category
+										included</p>
+								</li>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#FFF] text-[16px] font-normal leading-5">3 staff account included
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- item 3 -->
+					<div class=" md:w-[400px] md:col-span-4 col-span-12 bg-white p-[30px] rounded-[20px]">
+						<div class="flex items-center gap-5">
+							<img src="./assets/imgs/pricing3.png" alt="" class="w-[64px] h-[64px]">
+							<span class="font-medium text-[38px] leading-[44px] text-[#2D2D2D]">Free</span>
+						</div>
+						<p class="mt-5 text-[#676562] text-[16px] leading-7 font-normal">Starter plan to manage your one
+							category and try everything Sortler has to offer</p>
+						<div class="mt-[30px] text-[16px] font-normal leading-7 text-[#676562] text-center">
+							<span class="text-[34px] text-[#2D2D2D]">$0</span>
+							/ free forever
+						</div>
+						<div><button
+								class="mt-[20px] text-[#2D2D2D] py-[20px] w-full bg-[#F7D047] font-medium text-xl text-center rounded-[40px]">Book
+								a Demo</button></div>
+						<hr class="my-[30px]">
+						<div>
+							<ul>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#676562] text-[16px] font-normal leading-5">Up to 1K products
+										included</p>
+								</li>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#676562] text-[16px] font-normal leading-5">Up to 1K products
+										included</p>
+								</li>
+								<li class="flex items-center gap-2 mb-[22px]"> <img src="./assets/imgs/up.png"
+										class="w-4 h-4" alt="">
+									<p class="text-[#676562] text-[16px] font-normal leading-5">Up to 1K products
+										included</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+		</div>
+	</main>
+	<!--All eCommerce CMS platforms supported  -->
+	<footer class="bg-[#F2EDE6]">
+		<section class=" footer-product-page mx-auto w-11/12 md:w-3/4 pt-[150px] pb-[100px] text-center">
+			<p class="title-footer text-4xl font-semibold">
+				All eCommerce CMS platforms supported
+			</p>
+			<p class="text-sm text-gray-400 mt-3">
+				Magento 2, Shopify, WooCommerce, BigCommerce, Opencart and more.
+			</p>
+			<div class="brand flex flex-col md:flex-row md:justify-between  items-center mt-10">
+				<img src="./assets/imgs/Brand1.png" alt="" class="py-3 md:py-0 w-[170px]" />
+				<img src="./assets/imgs/Brand2.png" alt="" class="py-3 md:py-0 w-[170px]" />
+				<img src="./assets/imgs/Brand3.png" alt="" class="py-3 md:py-0 w-[170px]" />
+				<img src="./assets/imgs/Brand4.png" alt="" class="py-3 md:py-0 w-[170px]" />
+				<img src="./assets/imgs/Brand5.png" alt="" class="py-3 md:py-0 w-[170px]" />
+			</div>
+			<div class="banner-footer flex justify-center mt-20">
+				<img src="./assets/imgs/BannerFooter.png" alt="" />
+			</div>
+			<div class="nav-footer flex flex-wrap justify-between mt-10">
+				<div class="logo">
+					<img src="./assets/imgs/Logo.png" alt="" />
+				</div>
+				<div class="menu-footer">
+					<ul class="flex flex-wrap justify-between gap-4 mx-2 my-1 text-gray-400">
+						<li>Pricing</li>
+						<li>Company</li>
+						<li>About us</li>
+						<li>Contact us</li>
+					</ul>
+				</div>
+				<div class="social-icon">
+					<img src="./assets/imgs/Social Icon.png" alt="" />
+				</div>
+			</div>
+		</section>
+	</footer>
+
+</body>
+
+</html>
